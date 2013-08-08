@@ -3,7 +3,9 @@ window.Portfolio =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+  initialize: ->
+    new Portfolio.Routers.Projects
+    Backbone.history.start()
 
 $(document).ready ->
   Portfolio.initialize()

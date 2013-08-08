@@ -8,6 +8,6 @@ class Portfolio.Views.ProjectsIndex extends Backbone.View
 
   render: ->
     #projects is a local varaible
-    $(this.el).html(this.template(projects: @collection))
+    $(@el).html(@template(projects: @collection))
     this
     #return this WHOLE class - Portfolio.Views.ProjectsIndex

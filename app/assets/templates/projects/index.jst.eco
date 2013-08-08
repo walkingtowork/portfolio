@@ -1,9 +1,2 @@
 <h1>Ykat's Projects</h1>
 <!--@ or this is the same thing in coffee -->
-<ul>
-  <!---#coffeescript syntax inside of -->
-<% for project in @projects.models: %>
-  <li></li>
-<% end %>
-</ul>
-

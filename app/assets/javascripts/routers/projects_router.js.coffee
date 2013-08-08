@@ -8,6 +8,7 @@ class Portfolio.Routers.Projects extends Backbone.Router
   initialize: ->
     #initializing a new instance of the class
     @collection = new Portfolio.Collections.Projects()
+    #fetch is a backbone method
     #must reset because it fetches before the collection gets rendered otherwise
     @collection.fetch(reset: true)
 
@@ -15,10 +16,9 @@ class Portfolio.Routers.Projects extends Backbone.Router
 
   index: ->
     alert "Index page has loaded"
-    view = new WdiBackboneDemo.Views.ProjectsIndex(collection: @collection)
+    view = new Portfolio.Views.ProjectsIndex(collection: @collection)
     $('#container').html(view.render().el)
 
 
   show: (id) ->
     #currently nothing is happening, but this page is where the magic is going to happen
-    alert "You are showing an individual project"
