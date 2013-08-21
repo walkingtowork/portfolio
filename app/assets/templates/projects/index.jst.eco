@@ -1,2 +1,12 @@
-<h1>Ykat's Projects</h1>
+<h1>Alex's Projects</h1>
 <!--@ or this is the same thing in coffee -->
+<div id="about_me">
+  About Me Block
+</div>
+<div id="project_collection">
+  Project Collection Block
+</div>
+
+<div id="social_media">
+  Social Media Block
+</div>

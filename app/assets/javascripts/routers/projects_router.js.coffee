@@ -15,9 +15,9 @@ class Portfolio.Routers.Projects extends Backbone.Router
 
 
   index: ->
-    alert "Index page has loaded"
+    # alert "Index page has loaded"
     view = new Portfolio.Views.ProjectsIndex(collection: @collection)
-    $('#container').html(view.render().el)
+    $('#body_container').html(view.render().el)
 
 
   show: (id) ->

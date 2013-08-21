@@ -2,13 +2,44 @@
 <html>
 <head>
   <title>Portfolio</title>
+  <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<nav id="nav_bar">
+  <div id="nav_container">
+    <div class="nav_block" id="about_me_nav">
+      <ul>
+        <li>About Me</li>
+        <li>HP: 100</li>
+        <li>MP: 50<li>
+      </ul>
+    </div>
+    <div class="nav_block" id="project_collection_nav">
+      <ul>
+        <li>Portfolio</li>
+        <li>HP: 100</li>
+        <li>MP: 50<li>
+      </ul>
+    </div>
+    <div class="nav_block" id="social_media_nav">
+      <ul>
+        <li>Social Media</li>
+        <li>HP: 100</li>
+        <li>MP: 50<li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <%= yield %>
+
+<footer id="footer_bar">
+  This is the footer
+</footer>
 
 </body>
 </html>
